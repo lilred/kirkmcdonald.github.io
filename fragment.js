@@ -1,4 +1,4 @@
-/*Copyright 2015-2019 Kirk McDonald
+/*Copyright 2015-2020 Kirk McDonald
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,9 +22,7 @@ function formatSettings(targets) {
         settings += "debug=on&"
     }
     var mod = currentMod()
-    if (mod != DEFAULT_MODIFICATION) {
-        settings += "data=" + mod + "&"
-    }
+    settings += "data=" + mod + "&"
     if (colorScheme.name != DEFAULT_COLOR_SCHEME) {
         settings += "c=" + colorScheme.name + "&"
     }
